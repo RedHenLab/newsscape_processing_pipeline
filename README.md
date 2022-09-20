@@ -5,20 +5,20 @@ This pipeline assumes as starting points the NewsScape text file and the NewsSca
 
 Processing Steps
 - Where exactly? - Data quality assessment step 1
--- spell checking
--- audio signal quality check
--- video error check
+  - spell checking
+  - audio signal quality check
+  - video error check
 - Sentence splitting (includes transformation of turn and story boundaries - extend to commercials?
 - ToDo: Where do we incorporate the information about commercials? Either here or before/during sentence splitting.
 - Extraction of non-spoken text
 - Run CoreNLP
--- tokenization
--- pos
--- lemma
--- TrueCase
--- dependency parsing
--- NER
--- coreference resolution
+  - tokenization
+  - pos
+  - lemma
+  - TrueCase
+  - dependency parsing
+  - NER
+  - coreference resolution
 - (optional) Run PathLSTM for semantic frame annotation
 - Verticalize (including XML parsing to check integrity)
 - Create input for Gentle
